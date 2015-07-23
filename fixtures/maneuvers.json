@@ -1,0 +1,222 @@
+[{
+	"pk": 1,
+	"model": "squad_builder.maneuver",
+	"fields": {
+		"speed": 0,
+		"angle": "STR"
+	}
+}, {
+	"pk": 2,
+	"model": "squad_builder.maneuver",
+	"fields": {
+		"speed": 1,
+		"angle": "STR"
+	}
+}, {
+	"pk": 3,
+	"model": "squad_builder.maneuver",
+	"fields": {
+		"speed": 2,
+		"angle": "STR"
+	}
+}, {
+	"pk": 4,
+	"model": "squad_builder.maneuver",
+	"fields": {
+		"speed": 3,
+		"angle": "STR"
+	}
+}, {
+	"pk": 5,
+	"model": "squad_builder.maneuver",
+	"fields": {
+		"speed": 4,
+		"angle": "STR"
+	}
+}, {
+	"pk": 6,
+	"model": "squad_builder.maneuver",
+	"fields": {
+		"speed": 5,
+		"angle": "STR"
+	}
+}, {
+	"pk": 7,
+	"model": "squad_builder.maneuver",
+	"fields": {
+		"speed": 1,
+		"angle": "TRN",
+		"direction": "LFT"
+	}
+}, {
+	"pk": 8,
+	"model": "squad_builder.maneuver",
+	"fields": {
+		"speed": 2,
+		"angle": "TRN",
+		"direction": "LFT"
+	}
+}, {
+	"pk": 9,
+	"model": "squad_builder.maneuver",
+	"fields": {
+		"speed": 3,
+		"angle": "TRN",
+		"direction": "LFT"
+	}
+}, {
+	"pk": 10,
+	"model": "squad_builder.maneuver",
+	"fields": {
+		"speed": 1,
+		"angle": "TRN",
+		"direction": "RHT"
+	}
+}, {
+	"pk": 11,
+	"model": "squad_builder.maneuver",
+	"fields": {
+		"speed": 2,
+		"angle": "TRN",
+		"direction": "RHT"
+	}
+}, {
+	"pk": 12,
+	"model": "squad_builder.maneuver",
+	"fields": {
+		"speed": 3,
+		"angle": "TRN",
+		"direction": "RHT"
+	}
+}, {
+	"pk": 13,
+	"model": "squad_builder.maneuver",
+	"fields": {
+		"speed": 1,
+		"angle": "BNK",
+		"direction": "RHT"
+	}
+}, {
+	"pk": 14,
+	"model": "squad_builder.maneuver",
+	"fields": {
+		"speed": 2,
+		"angle": "BNK",
+		"direction": "RHT"
+	}
+}, {
+	"pk": 15,
+	"model": "squad_builder.maneuver",
+	"fields": {
+		"speed": 3,
+		"angle": "BNK",
+		"direction": "RHT"
+	}
+}, {
+	"pk": 16,
+	"model": "squad_builder.maneuver",
+	"fields": {
+		"speed": 1,
+		"angle": "BNK",
+		"direction": "LFT"
+	}
+}, {
+	"pk": 17,
+	"model": "squad_builder.maneuver",
+	"fields": {
+		"speed": 2,
+		"angle": "BNK",
+		"direction": "LFT"
+	}
+}, {
+	"pk": 18,
+	"model": "squad_builder.maneuver",
+	"fields": {
+		"speed": 3,
+		"angle": "BNK",
+		"direction": "LFT"
+	}
+}, {
+	"pk": 19,
+	"model": "squad_builder.maneuver",
+	"fields": {
+		"speed": 1,
+		"angle": "KTN"
+	}
+}, {
+	"pk": 20,
+	"model": "squad_builder.maneuver",
+	"fields": {
+		"speed": 2,
+		"angle": "KTN"
+	}
+}, {
+	"pk": 21,
+	"model": "squad_builder.maneuver",
+	"fields": {
+		"speed": 3,
+		"angle": "KTN"
+	}
+}, {
+	"pk": 22,
+	"model": "squad_builder.maneuver",
+	"fields": {
+		"speed": 4,
+		"angle": "KTN"
+	}
+}, {
+	"pk": 23,
+	"model": "squad_builder.maneuver",
+	"fields": {
+		"speed": 5,
+		"angle": "KTN"
+	}
+}, {
+	"pk": 24,
+	"model": "squad_builder.maneuver",
+	"fields": {
+		"speed": 1,
+		"angle": "SLP",
+		"direction": "RHT"
+	}
+}, {
+	"pk": 25,
+	"model": "squad_builder.maneuver",
+	"fields": {
+		"speed": 3,
+		"angle": "SLP",
+		"direction": "RHT"
+	}
+}, {
+	"pk": 26,
+	"model": "squad_builder.maneuver",
+	"fields": {
+		"speed": 3,
+		"angle": "SLP",
+		"direction": "RHT"
+	}
+}, {
+	"pk": 27,
+	"model": "squad_builder.maneuver",
+	"fields": {
+		"speed": 1,
+		"angle": "SLP",
+		"direction": "LFT"
+	}
+}, {
+	"pk": 28,
+	"model": "squad_builder.maneuver",
+	"fields": {
+		"speed": 2,
+		"angle": "SLP",
+		"direction": "LFT"
+	}
+}, {
+	"pk": 29,
+	"model": "squad_builder.maneuver",
+	"fields": {
+		"speed": 3,
+		"angle": "SLP",
+		"direction": "LFT"
+	}
+}]

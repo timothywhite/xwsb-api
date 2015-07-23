@@ -1,0 +1,91 @@
+
+del": "squad_builder.upgradetype",
+	"fields": {
+		"name": "Elite Pilot Talent",
+		"order": 0
+	}
+}, {
+	"pk": 2,
+	"model": "squad_builder.upgradetype",
+	"fields": {
+		"name": "Modification",
+		"order": 20
+	}
+}, {
+	"pk": 3,
+	"model": "squad_builder.upgradetype",
+	"fields": {
+		"name": "Title",
+		"order": 21
+	}
+}, {
+	"pk": 4,
+	"model": "squad_builder.upgradetype",
+	"fields": {
+		"name": "Astromech",
+		"order": 2
+	}
+}, {
+	"pk": 5,
+	"model": "squad_builder.upgradetype",
+	"fields": {
+		"name": "Bomb",
+		"order": 19
+	}
+}, {
+	"pk": 6,
+	"model": "squad_builder.upgradetype",
+	"fields": {
+		"name": "Cannon",
+		"order": 3
+	}
+}, {
+	"pk": 7,
+	"model": "squad_builder.upgradetype",
+	"fields": {
+		"name": "Crew",
+		"order": 0
+	}
+}, {
+	"pk": 8,
+	"model": "squad_builder.upgradetype",
+	"fields": {
+		"name": "Illicit",
+		"order": 0
+	}
+}, {
+	"pk": 9,
+	"model": "squad_builder.upgradetype",
+	"fields": {
+		"name": "Missile",
+		"order": 0
+	}
+}, {
+	"pk": 10,
+	"model": "squad_builder.upgradetype",
+	"fields": {
+		"name": "Salvaged Astromech",
+		"order": 0
+	}
+}, {
+	"pk": 11,
+	"model": "squad_builder.upgradetype",
+	"fields": {
+		"name": "System",
+		"order": 0
+	}
+}, {
+	"pk": 12,
+	"model": "squad_builder.upgradetype",
+	"fields": {
+		"name": "Torpedo",
+		"order": 0
+	}
+}, {
+	"pk": 13,
+	"model": "squad_builder.upgradetype",
+	"fields": {
+		"name": "Turret",
+		"order": 0
+	}
+}]

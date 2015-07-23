@@ -1,0 +1,191 @@
+[{
+	"pk": 1,
+	"model": "squad_builder.expansion",
+	"fields": {
+		"name": "Core",
+		"order": 0
+	}
+}, {
+	"pk": 2,
+	"model": "squad_builder.expansion",
+	"fields": {
+		"name": "X-Wing Expansion Pack",
+		"order": 1
+	}
+}, {
+	"pk": 3,
+	"model": "squad_builder.expansion",
+	"fields": {
+		"name": "Y-Wing Expansion Pack",
+		"order": 2
+	}
+}, {
+	"pk": 4,
+	"model": "squad_builder.expansion",
+	"fields": {
+		"name": "TIE Fighter Expansion Pack",
+		"order": 3
+	}
+}, {
+	"pk": 5,
+	"model": "squad_builder.expansion",
+	"fields": {
+		"name": "TIE Advanced Expansion Pack",
+		"order": 4
+	}
+}, {
+	"pk": 6,
+	"model": "squad_builder.expansion",
+	"fields": {
+		"name": "A-Wing Expansion Pack",
+		"order": 5
+	}
+}, {
+	"pk": 7,
+	"model": "squad_builder.expansion",
+	"fields": {
+		"name": "Millennium Falcon Expansion Pack",
+		"order": 6
+	}
+}, {
+	"pk": 8,
+	"model": "squad_builder.expansion",
+	"fields": {
+		"name": "TIE Interceptor Expansion Pack",
+		"order": 7
+	}
+}, {
+	"pk": 9,
+	"model": "squad_builder.expansion",
+	"fields": {
+		"name": "Slave I Expansion Pack",
+		"order": 8
+	}
+}, {
+	"pk": 10,
+	"model": "squad_builder.expansion",
+	"fields": {
+		"name": "B-Wing Expansion Pack",
+		"order": 9
+	}
+}, {
+	"pk": 11,
+	"model": "squad_builder.expansion",
+	"fields": {
+		"name": "HWK-290 Expansion Pack",
+		"order": 10
+	}
+}, {
+	"pk": 12,
+	"model": "squad_builder.expansion",
+	"fields": {
+		"name": "TIE Bomber Expansion Pack",
+		"order": 11
+	}
+}, {
+	"pk": 13,
+	"model": "squad_builder.expansion",
+	"fields": {
+		"name": "Lambda-Class Shuttle Expansion Pack",
+		"order": 12
+	}
+}, {
+	"pk": 14,
+	"model": "squad_builder.expansion",
+	"fields": {
+		"name": "Z-95 Headhunter Expansion Pack",
+		"order": 13
+	}
+}, {
+	"pk": 15,
+	"model": "squad_builder.expansion",
+	"fields": {
+		"name": "E-Wing Expansion Pack",
+		"order": 14
+	}
+}, {
+	"pk": 16,
+	"model": "squad_builder.expansion",
+	"fields": {
+		"name": "TIE Defender Expansion Pack",
+		"order": 15
+	}
+}, {
+	"pk": 17,
+	"model": "squad_builder.expansion",
+	"fields": {
+		"name": "TIE Phantom Expansion Pack",
+		"order": 16
+	}
+}, {
+	"pk": 18,
+	"model": "squad_builder.expansion",
+	"fields": {
+		"name": "YT-2400 Freighter Expansion Pack",
+		"order": 17
+	}
+}, {
+	"pk": 19,
+	"model": "squad_builder.expansion",
+	"fields": {
+		"name": "VT-49 Decimator Expansion Pack",
+		"order": 18
+	}
+}, {
+	"pk": 20,
+	"model": "squad_builder.expansion",
+	"fields": {
+		"name": "Imperial Aces Expansion Pack",
+		"order": 19
+	}
+}, {
+	"pk": 21,
+	"model": "squad_builder.expansion",
+	"fields": {
+		"name": "Rebel Aces Expansion Pack",
+		"order": 20
+	}
+}, {
+	"pk": 22,
+	"model": "squad_builder.expansion",
+	"fields": {
+		"name": "Tantive IV Expansion Pack",
+		"order": 21
+	}
+}, {
+	"pk": 23,
+	"model": "squad_builder.expansion",
+	"fields": {
+		"name": "StarViper Expansion Pack",
+		"order": 22
+	}
+}, {
+	"pk": 24,
+	"model": "squad_builder.expansion",
+	"fields": {
+		"name": "M3-A Interceptor Expansion Pack",
+		"order": 23
+	}
+}, {
+	"pk": 25,
+	"model": "squad_builder.expansion",
+	"fields": {
+		"name": "IG-2000 Expansion Pack",
+		"order": 24
+	}
+}, {
+	"pk": 26,
+	"model": "squad_builder.expansion",
+	"fields": {
+		"name": "Most Wanted Expansion Pack",
+		"order": 25
+	}
+}, {
+	"pk": 27,
+	"model": "squad_builder.expansion",
+	"fields": {
+		"name": "Rebel Transport Expansion PAck",
+		"order": 26
+	}
+}]
+
