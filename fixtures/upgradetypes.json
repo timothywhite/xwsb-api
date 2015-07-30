@@ -1,5 +1,6 @@
-
-del": "squad_builder.upgradetype",
+[{
+	"pk": 1,
+	"model": "squad_builder.upgradetype",
 	"fields": {
 		"name": "Elite Pilot Talent",
 		"order": 0
