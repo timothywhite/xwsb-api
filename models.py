@@ -1,6 +1,7 @@
 import re
 
 from django.db import models
+from django.contrib.auth.models import User
 
 def canonicalize(str):
     specialCases = {
@@ -241,11 +242,22 @@ class UpgradeManeuver(models.Model):
 
 class Squad(models.Model):
 	name = models.CharField(max_length=255)
-	
+        
+        user = models.ForeignKey(User)	
 	faction = models.ForeignKey('Faction', related_name='squads')
 	pilots = models.ManyToManyField('Pilot', through='SquadPilot')
-	
+	def __unicode__(self):
+	    return self.name
+
+class SquadPilotUpgrade(models.Model):
+    upgrade = models.ForeignKey('Upgrade')
+    pilot = models.ForeignKey('SquadPilot')
+    index = models.IntegerField()
+
 class SquadPilot(models.Model):
-	squad = models.ForeignKey('Squad')
-	pilot = models.ForeignKey('Pilot')
-	upgrades = models.ManyToManyField('Upgrade')
+    squad = models.ForeignKey('Squad')
+    pilot = models.ForeignKey('Pilot')
+    upgrades = models.ManyToManyField('Upgrade', through='SquadPilotUpgrade')
+    
+    def __unicode__(self):
+        return str(self.squad) + ': ' + str(self.pilot)

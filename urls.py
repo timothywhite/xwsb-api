@@ -15,13 +15,14 @@ router.register(r'upgrade/bonus', views.UpgradeBonusViewSet)
 router.register(r'upgrade/requirement', views.UpgradeRequirementViewSet)
 router.register(r'upgrade/maneuver', views.UpgradeManeuverViewSet)
 router.register(r'upgrade/type', views.UpgradeTypeViewSet)
-router.register(r'upgrade', views.UpgradeViewSet)
+router.register(r'upgrade', views.UpgradeViewSet, base_name='Upgrade')
 router.register(r'expansion/ship', views.ExpansionShipViewSet)
 router.register(r'expansion/pilot', views.ExpansionPilotViewSet)
 router.register(r'expansion/upgrade', views.ExpansionUpgradeViewSet)
 router.register(r'expansion', views.ExpansionViewSet)
+router.register(r'squad/pilot/upgrade', views.SquadPilotUpgradeViewSet)
 router.register(r'squad/pilot', views.SquadPilotViewSet)
-router.register(r'squad', views.SquadViewSet)
+router.register(r'squad', views.SquadViewSet, base_name='Squad')
 # The API URLs are now determined automatically by the router.
 # Additionally, we include the login URLs for the browsable API.
 urlpatterns = [

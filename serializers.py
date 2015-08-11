@@ -5,7 +5,7 @@ from squad_builder.models import *
 class FactionSerializer(serializers.ModelSerializer):
 	class Meta:
 		model = Faction
-		fields = ('id', 'name')
+		fields = ('id', 'name', 'canonical')
 
 class ActionSerializer(serializers.ModelSerializer):
     class Meta:
@@ -23,6 +23,7 @@ class UpgradeTypeSerializer(serializers.ModelSerializer):
         fields = ('id', 'name', 'canonical', 'order')
 
 class PilotSerializer(serializers.ModelSerializer):
+    faction = FactionSerializer()
     slots = UpgradeTypeSerializer(many=True, read_only=True)
     class Meta:
         model = Pilot
@@ -118,6 +119,14 @@ class ExpansionSerializer(serializers.ModelSerializer):
 ################    SQUAD     #############################################
 ###########################################################################
 
+class SquadPilotUpgradeSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = SquadPilotUpgrade
+        fields = ('id', 'upgrade', 'pilot', 'index')
+
+class DetailSquadPilotUpgradeSerializer(SquadPilotUpgradeSerializer):
+    upgrade = UpgradeSerializer()
+
 class SquadPilotShipSerializer(BaseShipSerializer):
     maneuvers = ShipManeuverSerializer(source='shipmaneuver_set', many=True)
     actions = ActionSerializer(many=True)
@@ -132,10 +141,10 @@ class CreateSquadPilotSerializer(serializers.ModelSerializer):
         
 class SquadPilotSerializer(CreateSquadPilotSerializer):
     pilot = PilotAndShipSerializer()
-    upgrades = UpgradeSerializer(many=True)
+    upgrades = DetailSquadPilotUpgradeSerializer(many=True, source='squadpilotupgrade_set')
         
 class SquadSerializer(serializers.ModelSerializer):
     pilots = SquadPilotSerializer(source='squadpilot_set', many=True, read_only=True)
     class Meta:
         model = Squad
-        fields = ('id', 'name', 'faction', 'pilots')
+        fields = ('id', 'name', 'faction', 'pilots', 'user')

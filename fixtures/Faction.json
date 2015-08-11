@@ -1,0 +1,1 @@
+[{"fields": {"name": "Galactic Empire"}, "model": "squad_builder.faction", "pk": 1}, {"fields": {"name": "Rebel Alliance"}, "model": "squad_builder.faction", "pk": 2}, {"fields": {"name": "Scum and Villainy"}, "model": "squad_builder.faction", "pk": 3}]
