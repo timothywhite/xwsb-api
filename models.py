@@ -131,7 +131,7 @@ class ShipManeuver(models.Model):
 	color = models.CharField(max_length=1, choices=COLORS)
 	
 	def __unicode__(self):
-		return str(self.color) + ' ' + str(self.maneuver)
+		return str(self.ship) + ': ' + str(self.color) + ' ' + str(self.maneuver)
 		
 class PilotSlot(models.Model):
     pilot = models.ForeignKey('Pilot')
