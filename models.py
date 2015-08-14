@@ -104,6 +104,7 @@ class Ship(models.Model):
     agility = models.IntegerField()
     shield = models.IntegerField()
     hull = models.IntegerField()
+    energy = models.IntegerField()
     base = models.IntegerField()
     
     maneuvers = models.ManyToManyField('Maneuver', through='ShipManeuver')	
@@ -129,6 +130,7 @@ class ShipManeuver(models.Model):
 	ship = models.ForeignKey('Ship')
 	maneuver = models.ForeignKey('Maneuver')
 	color = models.CharField(max_length=1, choices=COLORS)
+	energy = models.IntegerField(null=True, blank=True);
 	
 	def __unicode__(self):
 		return str(self.ship) + ': ' + str(self.color) + ' ' + str(self.maneuver)
@@ -170,6 +172,7 @@ class Upgrade(models.Model):
     required_slots = models.IntegerField(default=1)
     
     attack = models.IntegerField(null=True, blank=True)
+    energy = models.IntegerField(null=True, blank=True)
     range = models.CharField(max_length=3, null=True, blank=True)
     
     type = models.ForeignKey('UpgradeType', related_name='upgrades')
