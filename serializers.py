@@ -77,14 +77,14 @@ class ShipManeuverSerializer(serializers.ModelSerializer):
 		fields = ('id', 'maneuver', 'color', 'energy')
 		
 class CreateShipManeuverSerializer(serializers.ModelSerializer):
-        class Meta:
-                model = ShipManeuver
-                fields = ('id', 'ship', 'maneuver', 'color')
+    class Meta:
+        model = ShipManeuver
+        fields = ('id', 'ship', 'maneuver', 'color')
 
 class BaseShipSerializer(serializers.ModelSerializer):
-	class Meta:
-		model = Ship
-		fields = ('id', 'name', 'canonical', 'attack', 'agility', 'hull', 'shield', 'energy', 'base', 'actions', 'maneuvers', 'pilots', 'expansions')
+    class Meta:
+        model = Ship
+        fields = ('id', 'name', 'canonical', 'attack', 'agility', 'hull', 'shield', 'turret', 'range', 'energy', 'base', 'actions', 'maneuvers', 'pilots', 'expansions')
 
 class ShipSerializer(BaseShipSerializer):    
     maneuvers = ShipManeuverSerializer(source='shipmaneuver_set', many=True)
