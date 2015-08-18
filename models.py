@@ -77,21 +77,33 @@ class Expansion(models.Model):
     name = models.CharField(max_length=255)
     released = models.BooleanField(default=True)
     order = models.IntegerField()
+    
+    def __unicode__(self):
+        return self.name
 
 class ExpansionShip(models.Model):
     expansion = models.ForeignKey('Expansion', related_name='ships')
     ship = models.ForeignKey('Ship')
     count = models.IntegerField()
+    
+    def __unicode__(self):
+        return self.expansion.name + ': ' + self.ship.name
 
 class ExpansionPilot(models.Model):
     expansion = models.ForeignKey('Expansion', related_name='pilots')
     pilot = models.ForeignKey('Pilot')
     count = models.IntegerField()
+    
+    def __unicode__(self):
+        return self.expansion.name + ': ' + self.pilot.name
 
 class ExpansionUpgrade(models.Model):
     expansion = models.ForeignKey('Expansion', related_name='upgrades')
     upgrade = models.ForeignKey('Upgrade')
     count = models.IntegerField()
+    
+    def __unicode__(self):
+        return self.expansion.name + ': ' + self.upgrade.name
 
 class Base:
     SMALL = 0
@@ -140,6 +152,9 @@ class ShipManeuver(models.Model):
 class PilotSlot(models.Model):
     pilot = models.ForeignKey('Pilot')
     slot = models.ForeignKey('UpgradeType')
+    
+    def __unicode__(self):
+        return str(self.pilot) + ': ' + str(self.slot)
 
 class Pilot(models.Model):
     name = models.CharField(max_length=255)
