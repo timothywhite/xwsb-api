@@ -64,7 +64,7 @@ class UpgradeSerializer(serializers.ModelSerializer):
 	requirements = UpgradeRequirementSerializer(many=True, required=False, read_only=True)
 	class Meta:
 		model = Upgrade
-		fields = ('id', 'name', 'canonical', 'text', 'points', 'unique', 'limited', 'required_slots', 'attack', 'range', 'type', 'faction', 'expansions', 'bonuses', 'requirements')
+		fields = ('id', 'name', 'canonical', 'text', 'points', 'unique', 'limited', 'required_slots', 'attack', 'range', 'energy', 'type', 'faction', 'expansions', 'bonuses', 'requirements')
 
 ###########################################################################
 ##############       SHIP       ###########################################
@@ -74,17 +74,17 @@ class ShipManeuverSerializer(serializers.ModelSerializer):
 	maneuver = ManeuverSerializer()
 	class Meta:
 		model = ShipManeuver
-		fields = ('id', 'maneuver', 'color')
+		fields = ('id', 'maneuver', 'color', 'energy')
 		
 class CreateShipManeuverSerializer(serializers.ModelSerializer):
-        class Meta:
-                model = ShipManeuver
-                fields = ('id', 'ship', 'maneuver', 'color')
+    class Meta:
+        model = ShipManeuver
+        fields = ('id', 'ship', 'maneuver', 'color')
 
 class BaseShipSerializer(serializers.ModelSerializer):
-	class Meta:
-		model = Ship
-		fields = ('id', 'name', 'canonical', 'attack', 'agility', 'hull', 'shield', 'base', 'actions', 'maneuvers', 'pilots', 'expansions')
+    class Meta:
+        model = Ship
+        fields = ('id', 'name', 'canonical', 'attack', 'agility', 'hull', 'shield', 'turret', 'range', 'energy', 'base', 'actions', 'maneuvers', 'pilots', 'expansions')
 
 class ShipSerializer(BaseShipSerializer):    
     maneuvers = ShipManeuverSerializer(source='shipmaneuver_set', many=True)
